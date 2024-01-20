@@ -42,8 +42,8 @@
     <div class="card">
         <div class="card-header ui-sortable-handle" style="cursor: move;">
             <h3 class="card-title">
-            <i class="fas fa-chart-pie mr-1"></i>
-                Vendas
+            <i class="fas fa-chart-pie mr-1 bg-primary p-3"></i>
+                Histórico de Tarefas
             </h3>
             <div class="card-tools">
                 <ul class="nav nav-pills ml-auto">
@@ -69,10 +69,10 @@
                             </div>
                         </div>
                     </div>
-                    <canvas id="revenue-chart-canvas" height="300" style="height: 300px; display: block; width: 584px;" width="584" class="chartjs-render-monitor">asd</canvas>
+                    <canvas id="revenue-chart-canvas" height="300" style="height: 300px; display: block; width: 584px;" width="584" class="chartjs-render-monitor"></canvas>
                 </div>
                 <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="0" style="height: 0px; display: block; width: 0px;" class="chartjs-render-monitor" width="0">asd</canvas>
+                    <canvas id="sales-chart-canvas" height="0" style="height: 0px; display: block; width: 0px;" class="chartjs-render-monitor" width="0"></canvas>
                 </div>
             </div>
         </div>
@@ -83,13 +83,11 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         var data = {
-                labels: ['Vendas no crediário', 'Vendas à vista', 'Vendas em débito', 'Vendas em crédito '],
+                labels: ['Todas tarefas', 'Concluídas', 'Não concluídas', 'Pendentes'],
                 datasets: [{
-                    label: 'Histórico de vendas',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1,
-                    data: [50, 120, 80, 30, 90, 12, 13, 123]
+                    label: 'Tarefas / mês',
+                    backgroundColor: 'rgb(0, 123, 255)',
+                    data: [25, 10, 15, 2]
                 }]
             };
 

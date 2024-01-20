@@ -11,26 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('endereco')->nullable();
-            $table->string('telefone')->nullable();
-            $table->string('bairro')->nullable();
-            $table->string('cidade')->nullable();
+            $table->string('task');
+            $table->boolean('asset')->default(false);
+            $table->date('date')->nullable();
 
-
+            $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('user_id');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('clientes');
+        Schema::dropIfExists('tasks');
     }
 };

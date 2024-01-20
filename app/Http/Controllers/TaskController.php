@@ -9,17 +9,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
-class ProdutosController extends Controller
+class TaskController extends Controller
 {
-    protected $produtoService;
-    public function __construct(ProdutoService $produtoService)
+    protected $taskService;
+    public function __construct(ProdutoService $taskService)
     {
-        $this->produtoService = $produtoService;
+        $this->taskService = $taskService;
     }
 
     public function index(){
-        $produtos = $this->produtoService->buscarTodosProdutos();
-        return view('produto/index', ['produtos'=>$produtos]);
+        $tasks = $this->taskService->searchAllTasks();
+        return view('tasks/index', ['tasks'=>$tasks]);
     }
 
     public function editarView(Request $request){

@@ -11,17 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('produtos', function (Blueprint $table) {
-                $table->id('id');
-                $table->string('nome');
-                $table->string('codigo_barras')->nullable();
-                $table->decimal('preco');
-                $table->decimal('preco_custo');
-                $table->string('lucro');
-                $table->integer('estoque');
-                $table->string('fornecedor')->nullable();
-                $table->string('categoria')->nullable();
-
+        Schema::create('categories', function (Blueprint $table) {
+                $table->id();
+                $table->string('category_name');
+                $table->string('category_description')->nullable();
+                $table->date('date');
+                
                 $table->unsignedBigInteger('user_id');
                 $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
                 $table->timestamps();

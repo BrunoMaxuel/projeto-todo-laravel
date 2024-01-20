@@ -6,13 +6,13 @@ use Illuminate\Support\Facades\Auth;
 
 class ProdutoService{
 
-    protected $produtoRepository;
-    public function __construct(ProdutoRepository $produtoRepository){
-        $this->produtoRepository = $produtoRepository;
+    protected $taskRepository;
+    public function __construct(ProdutoRepository $taskRepository){
+        $this->taskRepository = $taskRepository;
     }
 
-    public function buscarTodosProdutos(){
-        return $this->produtoRepository->buscarTodosProdutos();
+    public function searchAllTasks(){
+        return $this->taskRepository->searchAllTasks();
     }
 
     public function edit($request){
