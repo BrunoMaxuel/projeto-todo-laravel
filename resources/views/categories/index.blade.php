@@ -57,7 +57,12 @@
                                 </small>
                             </td>
                             <td class="project-state">
-                                <span class="badge badge-success">Ativo</span>
+                                @if($category->asset_task)
+                                    <span class="badge badge-success fas fa-check"> </span>
+                                @else
+                                    <input type="checkbox" name="asset_task" id="">
+                                @endif
+                                
                             </td>
                             <td class="project-actions text-right">
                                 <a class="btn btn-primary btn-sm" href="#">

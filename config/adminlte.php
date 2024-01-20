@@ -198,7 +198,7 @@ return [
     'menu' => [
         [
             'text'        => 'Dashboard',
-            'url'         => '/',
+            'url'         => '/dashboard',
             'icon'        => 'fas fa-fw fa-home',
         ],
         [
@@ -207,23 +207,10 @@ return [
             'icon'        => 'fas fa-fw fa-tasks',
         ],
         [
-            'text'        => 'Categorias',
-            'url'         => '/categorias',
-            'icon'        => 'fas fa-fw fa-flag',
-            'submenu'=> [
-                [
-                    'text' => 'Categorias',
-                    'url'  => '/categorias',
-                    'icon' => 'fas fa-tag',
-                    'icon_color' => 'warning'
-                ],
-                [
-                    'text'    => 'Adicionar Categoria',
-                    'url'     => '/categoria/adicionar',
-                    'icon'    => 'fas fa-fw fa-plus',
-                    'icon_color' => 'success'
-                ],
-            ]
+            'text' => 'Categorias',
+            'url'  => '/categorias',
+            'icon' => 'fas fa-tag',
+            'icon_color' => 'warning'
         ],
         [
             'text' => 'Histórico de tarefas',
