@@ -202,56 +202,32 @@ return [
             'icon'        => 'fas fa-fw fa-home',
         ],
         [
-            'text'        => 'Realizar Vendas',
-            'url'         => '/vender',
-            'icon'        => 'fas fa-fw fa-shopping-cart',
+            'text'        => 'Criar Tarefas',
+            'url'         => '/tarefas',
+            'icon'        => 'fas fa-fw fa-tasks',
         ],
         [
-            'text'       => 'Gerenciar Caixa',
-            'url'        => 'caixa',
-            'icon'       => 'fas fa-fw fa-money-bill',    
-        ],
-        [
-            'text'        => 'Área de Produtos ',
-            'url'         => '/produtos',
-            'icon'        => 'fas fa-fw fa-box',
+            'text'        => 'Categorias',
+            'url'         => '/categorias',
+            'icon'        => 'fas fa-fw fa-flag',
             'submenu'=> [
                 [
-                    'text' => 'Lista de Produtos',
-                    'url'  => '/produtos',
+                    'text' => 'Categorias',
+                    'url'  => '/categorias',
                     'icon' => 'fas fa-tag',
                     'icon_color' => 'warning'
                 ],
                 [
-                    'text'    => 'Adicionar Produto',
-                    'url'     => '/produtos/adicionar',
+                    'text'    => 'Adicionar Categoria',
+                    'url'     => '/categoria/adicionar',
                     'icon'    => 'fas fa-fw fa-plus',
                     'icon_color' => 'success'
                 ],
             ]
         ],
         [
-            'text'        => 'Área de Clientes',
-            'url'         => '/clientes',
-            'icon'        => 'fas fa-fw fa-users',
-            'submenu'=> [
-                [
-                    'text' => 'Lista de Clientes',
-                    'url'  => '/clientes',
-                    'icon' => 'fas fa-fw fa-user',
-                    'icon_color' => 'warning'
-                ],
-                [
-                    'text'    => 'Adicionar Cliente',
-                    'url'     => '/clientes/adicionar',
-                    'icon'    => 'fas fa-fw fa-plus',
-                    'icon_color' => 'success'
-                ],
-            ]
-        ],
-        [
-            'text' => 'Histórico de Vendas',
-            'icon' => 'fas fa-chart-bar',
+            'text' => 'Histórico de tarefas',
+            'icon' => 'fas fa-history',
             'url' => '/historico'
         ]
         ,
