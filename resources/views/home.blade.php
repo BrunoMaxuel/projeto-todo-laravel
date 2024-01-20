@@ -3,10 +3,10 @@
 @section('content_header') 
     <div class="row">
         <div class="col-sm-4">
-            <a class="small-box bg-green p-3" href="{{ route('historico.view') }}" style="text-decoration: none; color: inherit;">
+            <a class="small-box bg-green p-3" href="" style="text-decoration: none; color: inherit;">
                 <div class="inner">
                     <h4>Concluídas</h4>
-                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>0</strong></h4>
+                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>{{$tasks_completed}}</strong></h4>
                     <div class="icon">
                         <i class="fas fa-check"></i>
                     </div>
@@ -16,10 +16,10 @@
         
 
         <div class="col-sm-4">
-            <a class="small-box bg-info p-3" href="{{ route('produto.index') }}" style="text-decoration: none; color: inherit;">
+            <a class="small-box bg-info p-3" href="" style="text-decoration: none; color: inherit;">
                 <div class="inner">
                     <h4>Pendentes</h4>
-                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>0</strong></h4>
+                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>{{$pending_tasks}}</strong></h4>
                     <div class="icon">
                         <i class="fas fa-star"></i>
                     </div>
@@ -28,10 +28,10 @@
         </div>
 
         <div class="col-sm-4">
-            <a class="small-box bg-danger p-3" href="{{ route('cliente.index') }}" style="text-decoration: none; color: inherit;">
+            <a class="small-box bg-danger p-3" href="" style="text-decoration: none; color: inherit;">
                 <div class="inner">
                     <h4>Não concluídas</h4>
-                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>10</strong></h4>
+                    <h4><i class="fas fa-arrow-right mr-3"></i><strong>{{$not_completed}}</strong></h4>
                     <div class="icon">
                         <i class="fas fa-times"></i>
                     </div>

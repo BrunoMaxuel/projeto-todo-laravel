@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CaixaController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\HistoricoVendasController;
@@ -20,7 +21,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/dashboard', [HomeController::class, 'index'])->name('home.index');
     
     Route::get('/tarefas', [TaskController::class, 'index'])->name('task.index');
-
+    Route::get('/categorias', [CategoryController::class, 'index'])->name('category.index');
 
 
     Route::post('/logout', [LoginController::class, 'deslogar'])->name('logout');

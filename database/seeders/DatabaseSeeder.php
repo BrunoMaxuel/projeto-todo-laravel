@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Cliente;
-use App\Models\Produto;
+use App\Models\Category;
+use App\Models\Task;
 use Illuminate\Database\Seeder;
 
 
@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
         ]);
 
-        Cliente::factory(50)->create();
-        Produto::factory(50)->create();
+        Category::factory(5)->create();
+        Task::factory(50)->create();
     }
 }

@@ -14,7 +14,7 @@
 
     {{-- Title --}}
     <title>
-        @yield('title', config('adminlte.title', 'Invoke Vendas'))
+        @yield('title', config('adminlte.title', 'default'))
     </title>
 
     {{-- Custom stylesheets (pre AdminLTE) --}}

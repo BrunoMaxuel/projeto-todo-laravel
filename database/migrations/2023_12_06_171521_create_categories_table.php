@@ -15,7 +15,7 @@ return new class extends Migration
                 $table->id();
                 $table->string('category_name');
                 $table->string('category_description')->nullable();
-                $table->date('date');
+                $table->date('category_date');
                 
                 $table->unsignedBigInteger('user_id');
                 $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('estoques');
+        Schema::dropIfExists('categories');
     }
 };
