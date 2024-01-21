@@ -18,7 +18,7 @@ class LoginController extends Controller
      */
     public function loginView()
     {
-        return view('vendor.adminlte.login');
+        return view('vendor.adminlte.auth.login');
     }
     /**
      * ação de autenticar

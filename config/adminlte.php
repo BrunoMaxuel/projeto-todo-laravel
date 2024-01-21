@@ -36,7 +36,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'logo' => 'ToDo supreme',
+    'logo' => '',
     'logo_img' => 'vendor/adminlte/dist/img/invokevendas_m.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -55,8 +55,8 @@ return [
             'path' => 'vendor/adminlte/dist/img/invokevendas_m.png',
             'alt' => 'Invoke Vendas',
             'class' => '',
-            'width' => 50,
-            'height' => 50,
+            'width' => 100,
+            'height' => 100,
         ],
     ],
 
