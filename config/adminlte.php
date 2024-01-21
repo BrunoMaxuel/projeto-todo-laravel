@@ -36,7 +36,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'logo' => '',
+    'logo' => 'ToDo supreme',
     'logo_img' => 'vendor/adminlte/dist/img/invokevendas_m.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -286,5 +286,5 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'livewire' => false,
+    'livewire' => true, 
 ];

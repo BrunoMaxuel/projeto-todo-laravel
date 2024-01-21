@@ -1,6 +1,7 @@
 @extends('adminlte::page')
 
 @section('content_header')
+    <livewire:category/>
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Categorias</h3>

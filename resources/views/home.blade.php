@@ -39,25 +39,32 @@
             </a>
         </div>
     </div>
-    <div class="card">
-        <div class="card-header ui-sortable-handle" style="cursor: move;">
-            <h1 class="card-title">
-                <i class="fas fa-chart-pie mr-2 text-primary"></i>
-                Histórico do mês
-            </h1>
-        </div>
-        <div class="card-body">
-            <div class="tab-content">
-                <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 270px;">
-                    <div class="chartjs-size-monitor">
-                        <div class="chartjs-size-monitor-expand">
-                            <div class="">
-                            </div> 
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header ui-sortable-handle" style="cursor: move;">
+                    <h1 class="card-title">
+                        <i class="fas fa-chart-pie mr-2 text-primary"></i>
+                        Histórico do mês
+                    </h1>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 270px;">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class="">
+                                    </div> 
+                                </div>
+                            </div>
+                            <canvas id="revenue-chart-canvas" height="270" width="700" class="chartjs-render-monitor"></canvas>
                         </div>
                     </div>
-                    <canvas id="revenue-chart-canvas" height="270" width="700" class="chartjs-render-monitor"></canvas>
                 </div>
             </div>
+        </div>
+        <div class="col-md-4">
+
         </div>
     </div>
 @endsection  
